@@ -1,0 +1,122 @@
+---
+title: "MSBR 70200 Assignment: Reporting using RStudio"
+author: "Chamroeun Chhay"
+date: "08/26/2024"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+* * *
+
+>`R Markdown (RMD)` is a preferred reporting tool in `R` environment. This assignment is to help you understand how to use R Markdown. 
+
+>Introduce yourself by revising this file (`RMD` file) according to the instruction. To see the formatted report, **knit** this `RMD` file by pressing **Ctrl+Shift+K** for Windows or **Command+Shift+K** for Mac. Notice that how `R Markdown` converts plain texts to formatted texts.
+
+**Helpful Resources**
+
+  * R for Data Science Chapters 1 and 27
+  * Reporting with R Markdown (DataCamp)
+
+
+<br>
+
+* * *
+
+
+### Basic Formatting Exercises (1 point each)
+
+<br>
+
+#### 1. (Regular text) Briefly introduce yourself. Include your hometown in **BOLD** and hobby in *Italic*.
+(1 paragraph)
+
+My name is Chamroeun Chhay. I am from **Phnom Pehn, Cambodia**. My hobbies include *hiking, gaming and cooking*.
+
+
+<br>
+
+#### 2. (Numbered list) My favorite colors 
+
+1. *Red*
+2. *White*
+
+
+<br>
+
+#### 3. (Bulleted list) My hobbies 
+
+* *Cooking*
+* *Hiking*
+
+
+<br>
+
+#### 4. (Table) Courses taken related to Mathematics, Statistics, and Computer Science
+Please fill the following table.
+
+| Course | Level (Under/Grad) | 
+| Calculus I | Under |
+| Quantitative Business Analysis | Under | 
+| Business Analytics | Under | 
+| Management Information System | Under |
+
+
+<br>
+
+
+* * *
+
+### Use `R` in `RMD` (2 points each)
+
+<br>
+
+> `RMD` is most powerful combined with `R`. The following are simple examples of how to include `R` code and results in RMD.
+
+#### 6. In RMD file, `R` code should be inside `R` code chunk. Follow each step to show the result.
+
+  a. Create a `R` code chunk, press Ctrl+Alt+I in Windows or Cmd+Alt+I in Mac. 
+  b. Write R code to compute $\frac{0.99 \times 0.5}{0.01+0.098 \times 0.50}$.
+  c. After knitting this file, you should be able to obtain the answer, 0.99.
+
+<br>
+
+```{r}
+(0.99*0.5)/(0.01+0.98*0.50)
+    
+```
+
+
+<br>
+
+
+#### 7. Recall `cars` data set in your first `R` Markdown.
+
+  a. Create a `R` code chunk, press Ctrl+Alt+I in Windows or Cmd+Alt+I in Mac. 
+  b. Write R code to draw scatter plot with `speed` as x-axis and `dist` as y-axis. (Hint: Recall how your first RMD drew a scatter plot.)
+
+<br>
+
+```{r}
+summary(cars)
+plot(cars)
+
+```
+
+<br>
+
+
+ * * *
+ * * *
+ 
+## Submission
+
+1. Once you answer all questions, save this file as `MSBR_70200_Assignment_RMD_FirstName_LastName.rmd` with your first and last names.
+2. Then, knit this rmd file by pressing Ctrl+Shift+K in Windows or Command+Shift+K in Mac.
+3. Submit the knitted html file to Canvas.
+
+* To get the full score, you should follow the formatting guidelines, if any. All of your `R` code should be inside `R` code chunk. 
